@@ -50,3 +50,15 @@
   #root, #__next {
     isolation: isolate;
   }
+  /*
+    10. Removing list styles
+  */
+  li{
+    list-style: none;
+  }
+  /*
+    11. Removing text decoration for links
+  */
+  a{
+    text-decoration: none;
+  }
