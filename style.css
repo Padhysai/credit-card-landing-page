@@ -103,73 +103,87 @@ a {
     padding: 5rem 0;
 }
 
-.main-cta > h1 {
+.main-cta>h1 {
     padding: 1rem 0;
     font-size: 2.5rem;
     font-weight: 500;
 }
-.main-cta > p{
+
+.main-cta>p {
     color: var(--clr-text-400);
     padding: 2rem 0;
 }
-.main-btn-div{
+
+.main-btn-div {
     justify-content: center;
     display: flex;
     gap: 1rem
 }
-.main-info{
+
+.main-info {
     margin: 3rem 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
 }
-.main-info-cmp{
+
+.main-info-cmp {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 1rem
 }
-.main-info-cmp p:first-child{
+
+.main-info-cmp p:first-child {
     font-weight: 600;
     font-size: 2rem;
 }
-.main-info-cmp p:last-child{
+
+.main-info-cmp p:last-child {
     font-size: 1.2rem;
     color: var(--clr-text-400);
 }
-.main-info > img{
+
+.main-info>img {
     display: none;
 }
 
 @media (min-width: 60em) {
-    .main-cta > h1 {
+    .main-cta>h1 {
         width: 80%;
         font-size: 5rem;
         font-weight: 500;
     }
-    .main-cta > p{
+
+    .main-cta>p {
         font-size: 1.5rem;
         width: 50%;
     }
-    .main-btn-div{
+
+    .main-btn-div {
         justify-content: flex-start;
     }
-    .main-btn-div > a{
+
+    .main-btn-div>a {
         font-size: 1.5rem;
     }
-    .main-info{
+
+    .main-info {
         justify-content: flex-start;
         flex-direction: row;
     }
-    .main-info > img{
+
+    .main-info>img {
         display: block;
     }
-    .main-info-cmp p:first-child{
+
+    .main-info-cmp p:first-child {
         font-weight: 600;
         font-size: 2.5rem;
     }
-    .main-info-cmp p:last-child{
+
+    .main-info-cmp p:last-child {
         font-size: 1.2rem;
         color: var(--clr-text-400);
     }
@@ -177,7 +191,7 @@ a {
 
 /* Main Content - Logo Section */
 
-.main-logos{
+.main-logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,16 +200,223 @@ a {
     padding: 4rem 0;
     background-color: var(--clr-text-400);
 }
-.main-logos > img{
+
+.main-logos>img {
     width: 50%;
 }
+
 @media (min-width: 60em) {
-    .main-logos{
+    .main-logos {
         padding: 6rem 0;
         flex-direction: row;
         gap: 10rem;
     }
-    .main-logos > img{
+
+    .main-logos>img {
         width: 120px;
     }
+}
+
+/* Main features Section */
+.main-features{
+    padding: 6rem 0;
+}
+.main-featires-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem
+}
+.main-featires-info h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+.main-featires-info p{
+    font-size: 1.2rem;
+    color: var(--clr-text-400);
+}
+.main-features-cards{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.main-features-cards > *{
+    flex: 1
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 4rem 4rem;
+    border: 1px solid var(--clr-text);
+}
+.card > *{
+    flex: 1
+}
+.card p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+@media (min-width: 60em) {
+    .main-featires-info{
+        flex-direction: row;
+        align-items: center;
+    }
+    .main-featires-info > *{
+        flex: 1
+    }
+    .main-featires-info h2{
+        font-size: 4rem;
+        text-align: start;
+    }
+    .main-featires-info p{
+        font-size: 1.4rem;
+    }
+    .main-features-cards{
+        flex-direction: row;
+    }
+    .main-features-cards{
+        align-items: flex-end;
+    }
+    .card:nth-child(2){
+        align-self: start;
+    }
+}
+
+/* Card choices Section */
+.main-card-choice{
+    padding: 4rem 0;
+    background-color: var(--clr-text);
+}
+.main-card-choice-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-card-choice-div h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--clr-bg-900);
+}
+.main-card-choice-div p{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--clr-text-400);
+}
+
+@media (min-width: 60em) {
+    .main-card-choice-div h2{
+        width: 70%;
+        font-size: 4rem;
+    }
+    .main-card-choice-div p{
+        width: 50%;
+        font-size: 1.4rem;
+    }
+}
+
+/* Testimonials Section */
+.testimonials-header{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem
+}
+.testimonials-header h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.testimonials-header p{
+    font-size: 1.2rem;
+    color: var(--clr-text-400);
+}
+.testimonial-cards{
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+}
+.testimonial{
+    border: 1px solid var(--clr-text);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+.testimonial >*{
+    flex: 1
+}
+.testimonial h3{
+    font-weight: 400;
+}
+.testimonial-loc p:last-child{
+    color: var(--clr-text-400)
+}
+
+@media (min-width: 60em) {
+    .testimonials-header h2{
+        font-size: 4rem;
+    }
+    .testimonials-header p{
+        width: 50%;
+        font-size: 1.4rem;
+    }
+    .testimonial-cards{
+        width: 85%;
+        margin: 1em auto;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 6rem;
+        column-gap: 4rem;
+    }
+}
+
+/* Bottom CTA Section */
+.main-cta-bottom{
+    padding: 2rem 0;
+}
+.cta-bottom-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 5rem 0;
+}
+.main-btn-div{
+    padding-top: 2rem;
+}
+.cta-bottom-header h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+.cta-bottom-wrapper{
+    position: relative;
+}
+.cta-bottom-img{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    z-index: -10;
+}
+.text-dark{
+    color: var(--clr-bg-900);
+    font-weight: 600;
+}
+@media (min-width: 60em) {
+.cta-bottom-header h2{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 4rem;
+}
+.cta-bottom-img{
+    height: 70vh;
+}
 }
