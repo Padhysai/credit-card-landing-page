@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with curved sections solution
+# Credit Card Service Landing Page solution
 
 This is a solution to the Credit card service landing page. This page is responsive and can be used in Mobile, Tablet and Laptop/Desktops.
 
